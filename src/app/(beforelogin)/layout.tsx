@@ -7,7 +7,6 @@ export default function BeforeLoginLayout({
 }) {
   return (
     <div>
-      비포 로그인 레이아웃
       {children} {/*page.tsx의 화면이 나옴*/}
       {modal} {/* @modal의 화면이 나옴 */}
     </div>

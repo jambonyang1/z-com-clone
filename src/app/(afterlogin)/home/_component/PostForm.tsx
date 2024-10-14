@@ -2,7 +2,6 @@
 
 import { ChangeEventHandler, FormEventHandler, useRef, useState } from "react";
 import style from "./postForm.module.css";
-import Image from "next/image";
 
 export default function PostForm() {
   const imageRef = useRef<HTMLInputElement>(null);
@@ -28,7 +27,7 @@ export default function PostForm() {
     <form className={style.postForm} onSubmit={onSubmit}>
       <div className={style.postUserSection}>
         <div className={style.postUserImage}>
-          <Image src={me.image} alt={me.id} width={40} height={40} />
+          <img src={me.image} alt={me.id} />
         </div>
       </div>
       <div className={style.postInputSection}>

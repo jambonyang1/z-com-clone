@@ -16,7 +16,7 @@ const Main = () => {
           계정 만들기
         </Link>
         <h2>이미 계정이 있으신가요?</h2>
-        <Link href="i/flow/login" className={styles.login}>
+        <Link href="/login" className={styles.login}>
           로그인
         </Link>
       </div>

@@ -2,10 +2,10 @@
 
 import style from "./trendSectionItem.module.css";
 import Link from "next/link";
-import {useState} from "react";
+import { useState } from "react";
 
 const TrendSectionItem = () => {
-    const [title, setTitle] = useState("gustavo");
+  const [title, setTitle] = useState("gus");
   return (
     <Link href={`/search?q=${title}`} className={style.container}>
       <div className={style.count}>실시간트렌드</div>

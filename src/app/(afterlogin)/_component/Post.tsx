@@ -7,7 +7,6 @@ import ActionButtons from "@/app/(afterLogin)/_component/ActionButtons";
 import PostArticle from "@/app/(afterLogin)/_component/PostArticle";
 import { faker } from "@faker-js/faker";
 import PostImages from "@/app/(afterLogin)/_component/PostImages";
-import Image from "next/image";
 
 dayjs.locale("ko");
 dayjs.extend(relativeTime);
@@ -20,7 +19,7 @@ export default function Post({ noImage }: Props) {
     postId: 1,
     User: {
       id: "hyun",
-      nickname: "ehrmantraut",
+      nickname: "gus fring",
       image: "/hyun.jpeg",
     },
     content: "클론코딩 라이브로 하니 너무 힘들어요 ㅠㅠ",
@@ -31,7 +30,7 @@ export default function Post({ noImage }: Props) {
     target.Images.push(
       { imageId: 1, link: faker.image.urlLoremFlickr() },
       { imageId: 2, link: faker.image.urlLoremFlickr() },
-      { imageId: 3, link: faker.image.urlLoremFlickr() },
+      { imageId: 3, link: faker.image.urlLoremFlickr() }
     );
   }
 
@@ -40,12 +39,7 @@ export default function Post({ noImage }: Props) {
       <div className={style.postWrapper}>
         <div className={style.postUserSection}>
           <Link href={`/${target.User.id}`} className={style.postUserImage}>
-            <Image
-              src={target.User.image}
-              alt={target.User.nickname}
-              width={40}
-              height={40}
-            />
+            <img src={target.User.image} alt={target.User.nickname} />
             <div className={style.postShade} />
           </Link>
         </div>

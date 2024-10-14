@@ -67,16 +67,16 @@
     font-weight: bold;
 }
 
+.postUserId {
+    color: rgb(83, 100, 113);
+}
+
 .postUserNick, .postDate {
     color: rgb(83, 100, 113);
 }
 
 .postDate:hover {
     text-decoration: underline;
-}
-
-.postImageSection {
-
 }
 
 .postBody {

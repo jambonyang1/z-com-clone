@@ -38,6 +38,8 @@
 }
 .userImage img {
     border-radius: 50%;
+    width: 134px;
+    height: 134px;
 }
 .userName {
     margin: 0 12px;
@@ -62,6 +64,7 @@
     font-size: 15px;
     color: white;
     cursor: pointer;
+    font-weight: bold;
 }
 .followButton:hover {
     background-color: rgb(39,44,48);
